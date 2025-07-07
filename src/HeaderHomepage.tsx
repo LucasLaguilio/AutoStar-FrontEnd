@@ -1,28 +1,29 @@
 import { NavLink } from "react-router";
 
-function Header(){
-    return(
-        <header>
+function HeaderHome(){
+  return(
+      <header>
+        <div className="Logo"> 
+            <img src="" alt="Logo" />
+        </div>
             <nav>
                 <div className="header-links">
-                    <a href="">Central do Vendedor</a>
-                    <NavLink to="/CadastroVeiculos">Veículos</NavLink>
-                     <NavLink to="/CadastroClientes">Clientes</NavLink>
                 </div>
+                <div className="header-links2">
                 <ul>
-                   
                     <li>
                         <NavLink to="/Homepage">Homepage</NavLink>
-                       
+                        <NavLink to="/CadastroVeiculos">Administrador</NavLink>
                     </li>
                 </ul>
+                </div>
             </nav>
             <div className="header-container">    
             </div>
         </header>
-    )
+
+  )
+
 }
 
-
-
-export default Header;
+export default HeaderHome;

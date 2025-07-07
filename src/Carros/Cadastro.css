@@ -12,15 +12,57 @@
 .container{
     margin-top: 150px;
     display: flex;
-    gap:15px;
-}
-.container-listagem{
     flex:3;
-    display: flex;
     gap: 32px;
-    flex-wrap: wrap;
-    font-family: "Manrope", sans-serif;
+  
 }
+
+.container-listagem{
+    flex:2;
+    box-shadow: 0px 0px 10px 2px #F0F0F0;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+
+
+}
+
+
+
+.container-Carros  {
+    max-width: 200px;
+    min-width: 300px;
+
+    border-radius: 10px;
+    padding: 10px; 
+    line-height: 1.5;
+    font-weight:600;
+    color: black;
+    box-shadow: 0px 0px 10px 2px #53535352;
+ 
+
+}
+
+.Carros-linkimg p {
+  margin: 0px;
+   color: cornflowerblue;    
+}
+
+img {
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.Carros-linkimg  {
+     overflow-wrap: break-word;
+}
+
 .container-cadastro{
     flex:1;
     box-shadow: 0px 0px 10px 2px #F0F0F0;

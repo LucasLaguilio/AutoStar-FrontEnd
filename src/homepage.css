@@ -1,0 +1,43 @@
+
+main{
+    margin-top: 100px;
+    padding: 0px 10px;
+    display: flex;
+
+}
+
+main > div {
+    flex: 1;
+}
+
+
+.container-listagem > ul > li {
+     list-style: none;
+    text-decoration: none;
+     flex:3;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    font-family: "Manrope", sans-serif;
+}
+
+
+
+.imagem {
+    margin-bottom: 200px;
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: contain;
+}
+
+.mensagem-erro{
+    position: fixed;
+    border: 1px solid coral;
+    width: fit-content;
+    padding: 0px 15px;
+    right: 15px;
+    background-color: #DC3545;
+    color:white
+}

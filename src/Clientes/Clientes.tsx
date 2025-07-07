@@ -1,6 +1,8 @@
 import React, { useState, useEffect}  from "react";
 
 
+
+
 interface ClientesState {
     id: number,
     nome: string,
@@ -96,5 +98,7 @@ function CadastroClientes() {
         </>
     )
 }
+
+
 
 export default CadastroClientes

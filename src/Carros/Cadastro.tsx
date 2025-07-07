@@ -12,7 +12,7 @@ interface CarrosState {
   linkimg: string
 }
 
-function Cadastro() {
+function CadastroVeiculos() {
   const [id, setId] = useState("")
   const [nome, setNome] = useState("")
   const [marca, setMarca] = useState("")
@@ -147,7 +147,7 @@ function Cadastro() {
                   Marca: {carro.marca}
                   </div>
                 <div className="Carros-preco">
-                  {carro.preco}
+                  Preço: {carro.preco} R$
                 </div>
                 <div className="Carros-cor"> 
                   Cor: {carro.cor}
@@ -162,8 +162,8 @@ function Cadastro() {
                 Descrição: {carro.descricao}
                 </div>
                 <div className="Carros-linkimg">
-                  Link da Imagem: {carro.linkimg}
-                    {/* <img src={carro.linkimg}></img> */}
+                  Link da Imagem: <p> {carro.linkimg} </p>
+                     <img src={carro.linkimg}></img> 
                 </div>
               </div>
             )
@@ -173,4 +173,4 @@ function Cadastro() {
     </>
   )
 }
-export default Cadastro
+export default CadastroVeiculos

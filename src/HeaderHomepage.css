@@ -48,14 +48,32 @@ nav > ul > li > a {
     display: flex;
     align-items: center; /* Vertically center links */
     justify-content: center; /* Horizontally center links */
+
 }
 
 .header-links > a {
-    padding: 0 4px;
+    padding: 0 20px;
     text-decoration: none;
     color: white;
     font-family: "Manrope", sans-serif;
     display: flex;
     align-items: center; /* Vertically center text */
     justify-content: center; /* Horizontally */
+
 }
+
+.header-links2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+   
+}
+
+.header-links2 > ul > li > a {
+    padding:0px 10px ;
+    color: rgb(255, 255, 255);
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
