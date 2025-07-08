@@ -87,7 +87,7 @@ function CadastroClientes() {
             <div className="container-listagem">
                 {clientes.map(cliente => (
                     <div key={cliente.id} className="container-Clientes" >
-                        <div>ID: {cliente.id} </div>
+                        <div>Id: {cliente.id} </div>
                         <div>Nome: {cliente.nome} </div>
                         <div>Email: {cliente.email}</div>
                         <div>Telefone: {cliente.telefone} </div>
