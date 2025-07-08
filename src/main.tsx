@@ -1,18 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router";
 
-import CadastroClientes from './Clientes/Clientes.tsx'
-import CadastroVeiculos from './Carros/Cadastro.tsx'
-import Header from './Header'
-import "./Clientes/CadastroClientes.css"
-import "./Carros/Cadastro.css"
-import './Header.css'
-import './Homepage.tsx'
-import Homepage from './Homepage.tsx'
-import './homepage.css'
-import HeaderHome from './HeaderHomepage.tsx'
-import './HeaderHomepage.css'
+//Cadastros
+import CadastroClientes from "./Clientes/Clientes.tsx";
+import CadastroVeiculos from "./Carros/Cadastro.tsx";
+import "./Clientes/CadastroClientes.css";
+import "./Carros/Cadastro.css";
+
+//Headers
+import Header from "./Headers/Header";
+import "./Headers/Header.css";
+
+//Homepage
+import Homepage from "./Homepage/Homepage.tsx";
+import "./Homepage/Homepage.css";
+import HeaderHome from "./Homepage/HeaderHomepage.tsx";
+import "./Homepage/HeaderHomepage.css";
+
+//Rotas
 const router = createBrowserRouter([
   {
     path: "/CadastroClientes",
@@ -32,18 +38,19 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {  path: "/Homepage",
+  {
+    path: "/",
     element: (
-        <>
+      <>
         <HeaderHome />
         <Homepage />
-        </>
-    )}
+      </>
+    ),
+  },
 ]);
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
-)
-
+  </StrictMode>,
+);
