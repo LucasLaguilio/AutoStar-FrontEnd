@@ -21,7 +21,7 @@ function CadastroVendas() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resposta = await fetch("http://localhost:8001/Vendas")
+        const resposta = await fetch("http://localhost:8000/Vendas")
         if (resposta.status == 200) {
           const result = await resposta.json()
           setVendas(result)
@@ -49,7 +49,7 @@ function CadastroVendas() {
     }
     
     try {
-      const resposta = await fetch("http://localhost:8001/Vendas",{
+      const resposta = await fetch("http://localhost:8000/Vendas",{
       method:"POST",
           headers:{
             "Content-Type":"application/json"

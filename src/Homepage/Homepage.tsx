@@ -19,7 +19,7 @@ function Homepage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resposta = await fetch("http://localhost:8001/Carros");
+        const resposta = await fetch("http://localhost:8000/Carros");
         if (resposta.status === 200) {
           const result = await resposta.json();
           setVeiculos(result);
