@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Vertically center nav content */
+    justify-content: space-between; /* Horizontally center nav content */
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Center the list items vertically */
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 0 10px; /* Add spacing between items */
+}
+
+nav > ul > li > a {
+    padding: 0 4px;
+    text-decoration: none;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+}
+
+.header-links {
+    display: flex;
+    align-items: center; /* Vertically center links */
+    justify-content: center; /* Horizontally center links */
+
+}
+
+.header-links > a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally */
+
+}
+
+.header-links2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+   
+}
+
+.header-links2 > ul > li > a {
+    padding:0px 10px ;
+    color: rgb(255, 255, 255);
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
