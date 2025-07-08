@@ -6,6 +6,7 @@ function Header() {
       <nav>
         <div className="header-links">
           <a href="">Central do Vendedor</a>
+          <NavLink to="/CadastroVendas">Vendas</NavLink>
           <NavLink to="/CadastroVeiculos">Veículos</NavLink>
           <NavLink to="/CadastroClientes">Clientes</NavLink>
         </div>
