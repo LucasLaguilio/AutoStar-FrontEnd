@@ -8,7 +8,7 @@ main > div {
     flex: 1;
 }
 
-.Carros-preco {
+.Carros-preco text {
     color: green;
 }
 
@@ -31,13 +31,29 @@ main > div {
     font-family: "Manrope", sans-serif;
 }
 
-.imagem {
-    margin-bottom: 200px;
-    max-height: 300px;
+img {
+    display: flex;
+    padding: 0px;
+    height: auto;
     max-width: 300px;
-    min-width: 200px;
-    min-height: 200px;
-    object-fit: contain;
+    margin-top: 0px;
+    object-fit: cover;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.container-Carros {
+    max-width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #53535352;
+    color: black;
+}
+
+.container-Carros text {
+    line-height: 1.5;
+    font-weight: 600;
+    padding-left: 5px;
 }
 
 .mensagem-erro {

@@ -6,23 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import CadastroClientes from "./Clientes/Clientes.tsx";
 import CadastroVeiculos from "./Carros/Cadastro.tsx";
 import CadastroVendas from "./Vendas/Vendas.tsx";
-import "./Clientes/CadastroClientes.css";
-import "./Carros/Cadastro.css";
-import "./Vendas/Vendas.css"
-
 
 //Headers
 import Header from "./Headers/Header";
-import "./Headers/Header.css";
 
 //Homepage
 import Homepage from "./Homepage/Homepage.tsx";
-import "./Homepage/Homepage.css";
+
 import HeaderHome from "./Homepage/HeaderHomepage.tsx";
-import "./Homepage/HeaderHomepage.css";
-
-
-
 
 //Rotas
 const router = createBrowserRouter([
@@ -44,15 +35,15 @@ const router = createBrowserRouter([
       </>
     ),
   },
-   {
+  {
     path: "/CadastroVendas",
     element: (
       <>
-      <Header />
-      <CadastroVendas />
+        <Header />
+        <CadastroVendas />
       </>
-    )
-   },
+    ),
+  },
   {
     path: "/",
     element: (

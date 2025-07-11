@@ -1,4 +1,6 @@
 import { NavLink } from "react-router";
+import "./Homepage.css";
+import "./HeaderHomepage.css";
 
 function HeaderHome() {
   return (

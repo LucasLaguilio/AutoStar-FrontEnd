@@ -1,53 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-.mensagem-erro{
+.mensagem-erro {
     position: fixed;
     border: 1px solid coral;
     width: fit-content;
     padding: 0px 15px;
     right: 15px;
-    background-color: #DC3545;
-    color:white
+    background-color: #dc3545;
+    color: white;
 }
-.container{
+.container {
     margin-top: 150px;
     display: flex;
-    flex:3;
+    flex: 3;
     gap: 32px;
-  
 }
 
-.container-listagem{
-    flex:2;
-    box-shadow: 0px 0px 10px 2px #F0F0F0;
+.container-listagem {
+    flex: 2;
+    box-shadow: 0px 0px 10px 2px #f0f0f0;
     padding: 32px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
-
-
 }
 
-
-
-.container-Carros  {
+.container-Carros {
     max-width: 200px;
     min-width: 300px;
 
     border-radius: 10px;
-    padding: 10px; 
+
     line-height: 1.5;
-    font-weight:600;
+    font-weight: 600;
     color: black;
     box-shadow: 0px 0px 10px 2px #53535352;
- 
-
 }
 
 .Carros-linkimg p {
-  margin: 0px;
-   color: cornflowerblue;    
+    margin: 0px;
+    color: cornflowerblue;
 }
 
 img {
@@ -59,34 +52,30 @@ img {
     object-fit: contain;
 }
 
-.Carros-linkimg  {
-     overflow-wrap: break-word;
+.Carros-linkimg {
+    overflow-wrap: break-word;
 }
 
-.container-cadastro{
-    flex:1;
-    box-shadow: 0px 0px 10px 2px #F0F0F0;
+.container-cadastro {
+    flex: 1;
+    box-shadow: 0px 0px 10px 2px #f0f0f0;
     padding: 32px;
     box-sizing: border-box;
     font-family: "Manrope", sans-serifs;
-   
 }
 
-.container-cadastro form{
+.container-cadastro form {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
 }
 
-input{
+input {
     padding: 10px 10px;
-    border: 1px solid #F0F0F0;
+    border: 1px solid #f0f0f0;
     outline: none;
     font-family: inherit;
-    
 }
-input[type="text"]:focus{
+input[type="text"]:focus {
     outline: 1px solid lightblue;
 }
-

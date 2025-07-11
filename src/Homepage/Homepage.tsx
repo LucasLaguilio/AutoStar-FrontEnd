@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import "./Homepage.css";
+import "./HeaderHomepage.css";
 
 interface VeiculoState {
   id: number;
@@ -47,18 +49,33 @@ function Homepage() {
             return (
               <div key={veiculo.id} className="container-Carros">
                 <img src={veiculo.linkimg}></img>
-                <div className="Carros-nome">Nome: {veiculo.nome}</div>
-                <div className="Carros-marca">Marca: {veiculo.marca}</div>
-                <div className="Carros-cor">Cor: {veiculo.cor}</div>
-                <div className="Carros-categoria">
-                  Categoria: {veiculo.categoria}
+                <div className="Carros-nome">
+                  {" "}
+                  <text>Nome: {veiculo.nome}</text>
                 </div>
-                <div className="Carros-ano">Ano: {veiculo.ano}</div>
+                <div className="Carros-marca">
+                  {" "}
+                  <text> Marca: {veiculo.marca}</text>
+                </div>
+                <div className="Carros-cor">
+                  {" "}
+                  <text> Cor: {veiculo.cor}</text>
+                </div>
+                <div className="Carros-categoria">
+                  <text> Categoria: {veiculo.categoria} </text>
+                </div>
+                <div className="Carros-ano">
+                  {" "}
+                  <text> Ano: {veiculo.ano}</text>
+                </div>
                 <div className="Carros-descricao">
-                  Descrição: {veiculo.descricao}
+                  <text> Descrição: {veiculo.descricao} </text>
                 </div>
                 <div className="Carros-preco">
-                  <strong> Preço: {veiculo.preco} R$ </strong>
+                  <text>
+                    {" "}
+                    <strong> Preço: {veiculo.preco} R$ </strong>{" "}
+                  </text>
                 </div>
               </div>
             );
