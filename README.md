@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# Projeto CRUD com o tema de concessionária para a matéria de FrameWorks 1 e Banco De Dados 2.
+## Técnologias Utilizadas para o FrontEnd:
+**React** e **TypeScript** utilizando o **Vite**,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Como Rodar nosso projeto na sua máquina:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Primeiro clone nosso repositório**
+![Gif](https://github.com/user-attachments/assets/26ff17df-30b2-40c6-af7b-b995655f5cef)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+**Abra seu terminal ou sua IDE de preferência e dê o seguinte comando:**
+> não esqueça de verificar em qual pasta você está (Se fizer por uma IDE, não terá muita importancia.)
+
+```
+Git clone (URL aqui)
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Após clonar o repositório, dê o seguinte comando no terminal da sua IDE:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+Npm i
+ou
+Npm install
+```
+**para instalar todas as dependencias para o projeto funcionar corretamente.**
+
+**Pronto!, agora você ja pode rodar nosso projeto, para isso dê:**
+
+```
+Npm run dev
+```
+**No terminal da sua IDE.**
+
+**Agora nosso projeto está funcionando e instalado em sua máquina!**
+
+
+
+By <ins>Lucas</ins> & <ins>Elifas</ins> | 1023B 
+
+
