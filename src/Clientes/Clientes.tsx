@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './CadastroClientes.css'
 
 interface ClientesState {
     id: number,
@@ -104,9 +105,9 @@ async function trataForm(event: React.FormEvent<HTMLFormElement>) {
             <input type="text" placeholder="Nome" value={nome}onChange={e => setNome(e.target.value)}/>
             <input type="email" placeholder="Email" value={email}onChange={e => setEmail(e.target.value)}/>
             <input type="text" placeholder="Telefone" value={telefone} onChange={e => setTelefone(e.target.value)}/>
-            <input type="submit" value={modoEdicao ? 'Atualizar' : 'Cadastrar'} />
+            <input className="btnU" type="submit" value={modoEdicao ? 'Atualizar' : 'Cadastrar'} />
             {modoEdicao && (
-              <button type="button" onClick={() => { 
+              <button className="btnCancelar" type="button" onClick={() => { 
                 setId('')
                 setNome('')
                 setEmail('')
@@ -123,9 +124,9 @@ async function trataForm(event: React.FormEvent<HTMLFormElement>) {
                 <div>Id: {cliente.id}</div>
                 <div>Nome: {cliente.nome}</div>
                 <div>Email: {cliente.email}</div>
-                <div>Telefone: {cliente.telefone}</div>
-                <button onClick={() => preencherFormulario(cliente)}>Editar</button>
-                <button onClick={() => deletarCliente(cliente.id)}>Excluir</button>
+                <div className="Telefone" >Telefone: {cliente.telefone}</div>
+                <button className="btnEditar" onClick={() => preencherFormulario(cliente)}>Editar</button>
+                <button className="btnExcluir" onClick={() => deletarCliente(cliente.id)}>Excluir</button>
               </div>
             ))}
           </div>
